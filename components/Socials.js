@@ -1,5 +1,37 @@
-const Socials = () => {
-  return <div>Socials</div>;
-};
+// links
+import Link from "next/link";
 
-export default Socials;
+// icons
+import {
+  RiYoutubeLine,
+  RiInstagramLine,
+  RiFacebookLine,
+  RiBasketballLine,
+  RiBehanceLine,
+  RiPinterestLine,
+} from "react-icons/ri";
+
+export default function Socials() {
+  return (
+    <div className="flex items-center gap-x-5 text-lg">
+      <Link href={""} className="hover:text-accent transition-all duration-300">
+        <RiYoutubeLine />
+      </Link>
+      <Link href={""} className="hover:text-accent transition-all duration-300">
+        <RiInstagramLine />
+      </Link>
+      <Link href={""} className="hover:text-accent transition-all duration-300">
+        <RiFacebookLine />
+      </Link>
+      <Link href={""} className="hover:text-accent transition-all duration-300">
+        <RiBasketballLine />
+      </Link>
+      <Link href={""} className="hover:text-accent transition-all duration-300">
+        <RiBehanceLine />
+      </Link>
+      <Link href={""} className="hover:text-accent transition-all duration-300">
+        <RiPinterestLine />
+      </Link>
+    </div>
+  );
+}

@@ -49,7 +49,6 @@ export const serviceData = [
 ];
 
 export default function ServiceSlider() {
-  console.log(serviceData);
   return (
     <Swiper
       breakpoints={{

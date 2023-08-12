@@ -135,9 +135,9 @@ export default function About() {
             exit="hidden"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            10 years ago, I began freelancing as a developer. Since then, I've
-            done remote work for agencies, counsulted for startups, and
-            collaborated on digital products for business and consumer use.
+            10 years ago, I began freelancing as a developer. Since then,
+            I&apos;ve done remote work for agencies, counsulted for startups,
+            and collaborated on digital products for business and consumer use.
           </motion.p>
           {/* counters */}
           <motion.div
@@ -215,7 +215,7 @@ export default function About() {
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
-                  key={itemIndex}
+                  key={itemIndex.id}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
                 >
                   {/* title */}

@@ -224,13 +224,13 @@ export default function About() {
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
                     {/* icons */}
-                    {item.icons?.map((icon, itemIndex) => {
+                    {/* {item.icons?.map((icon, itemIndex) => {
                       return (
                         <div key={itemIndex} className="text-2xl">
                           {icon}
                         </div>
                       );
-                    })}
+                    })} */}
                   </div>
                 </div>
               );

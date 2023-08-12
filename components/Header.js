@@ -15,9 +15,9 @@ export default function Header() {
           {/* logo */}
           <Link href={"/"}>
             <Image
-              src={"/logo.svg"}
-              width={220}
-              height={48}
+              src={"/logo.png"}
+              width={100}
+              height={100}
               alt=""
               priority={true}
             />

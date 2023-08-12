@@ -26,8 +26,8 @@ export default function home() {
             exit="hidden"
             className="h1"
           >
-            Transforming Ideas <br /> Into{" "}
-            <span className="text-accent"> Digital Reality</span>
+            Hi, I am Joemar <br />
+            <span className="text-accent"> Web Developer</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -37,10 +37,9 @@ export default function home() {
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry&apos;s standard dummy
-            text ever since the 1500s, when an unknown printer took a galley of
-            type and scrambled it to make a type specimen book.
+            I am a passionate, motivated and self-taught person; seeking career
+            opportunities in{" "}
+            <span className="text-accent">Web Development.</span>
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">

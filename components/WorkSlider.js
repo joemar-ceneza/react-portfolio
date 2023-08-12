@@ -22,19 +22,19 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/e-commerce-camera-haus.jpg",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/e-commerce-e-shopping.jpg",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/simon-game.jpg",
         },
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/huddle-landing-page.jpg",
         },
       ],
     },
@@ -42,19 +42,19 @@ const workSlides = {
       images: [
         {
           title: "title",
-          path: "/thumb4.jpg",
+          path: "/notes-app.jpg",
         },
         {
           title: "title",
-          path: "/thumb1.jpg",
+          path: "/birthday-buddy-app.jpg",
         },
         {
           title: "title",
-          path: "/thumb2.jpg",
+          path: "/expanding-cards.jpg",
         },
         {
           title: "title",
-          path: "/thumb3.jpg",
+          path: "/testimonials-slider.jpg",
         },
       ],
     },

@@ -6,19 +6,24 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
-  FaFigma,
+  FaSass,
+  FaBootstrap,
+  FaNodeJs,
 } from "react-icons/fa";
 
 import {
   SiNextdotjs,
-  SiFramer,
-  SiAdobexd,
-  SiAdobephotoshop,
+  SiTailwindcss,
+  SiJquery,
+  SiExpress,
+  SiMysql,
+  SiMongodb,
+  SiMongoose,
+  SiPhp,
 } from "react-icons/si";
 
 // components
-import Avatar from "../../components/Avatar";
+// import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 
 // framer motion
@@ -31,37 +36,26 @@ export const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Front End",
         icons: [
-          // <FaHtml5 />,
-          // <FaCss3 />,
-          // <FaJs />,
-          // <FaReact />,
-          // <SiNextdotjs />,
-          // <SiFramer />,
-          // <FaWordpress />,
+          <FaHtml5 />,
+          <FaCss3 />,
+          <FaBootstrap />,
+          <FaSass />,
+          <SiTailwindcss />,
+          <FaJs />,
+          <SiJquery />,
+          <FaReact />,
+          <SiNextdotjs />,
         ],
       },
       {
-        title: "UI/UX Design",
-        icons: [
-          // <FaFigma />,
-          // <SiAdobexd />,
-          // <SiAdobephotoshop />
-        ],
-      },
-    ],
-  },
-  {
-    title: "awards",
-    info: [
-      {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "Back End",
+        icons: [<FaNodeJs />, <SiExpress />, <SiMongoose />, <SiPhp />],
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        title: "Database",
+        icons: [<SiMongodb />, <SiMysql />],
       },
     ],
   },
@@ -69,33 +63,8 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
-      },
-      {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
-      },
-    ],
-  },
-  {
-    title: "credentials",
-    info: [
-      {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Junior Account Administrator - Leekie Enterprise Inc.",
+        stage: "2016 - Present",
       },
     ],
   },
@@ -103,6 +72,7 @@ export const aboutData = [
 
 // counter
 import CountUp from "react-countup";
+import { icons } from "react-icons";
 
 export default function About() {
   const [index, setIndex] = useState(0);
@@ -110,7 +80,7 @@ export default function About() {
     <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
       <Circles />
       {/* avatar img */}
-      <motion.div
+      {/* <motion.div
         variants={fadeIn("right", 0.2)}
         initial="hidden"
         animate="show"
@@ -118,7 +88,7 @@ export default function About() {
         className="hidden xl:flex absolute bottom-0 -left-[230px]"
       >
         <Avatar />
-      </motion.div>
+      </motion.div> */}
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6">
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
@@ -200,7 +170,7 @@ export default function About() {
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {/* {aboutData.map((item, itemIndex) => {
+            {aboutData.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
@@ -213,10 +183,10 @@ export default function About() {
                   {item.title}
                 </div>
               );
-            })} */}
+            })}
           </div>
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {/* {aboutData[index].info.map((item, itemIndex) => {
+            {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
                   key={itemIndex}
@@ -236,7 +206,7 @@ export default function About() {
                   </div>
                 </div>
               );
-            })} */}
+            })}
           </div>
         </motion.div>
       </div>

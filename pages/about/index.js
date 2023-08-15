@@ -31,31 +31,38 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
 //  about data
+
+const frontEndIcons = [
+  <FaHtml5 />,
+  <FaCss3 />,
+  <FaBootstrap />,
+  <FaSass />,
+  <SiTailwindcss />,
+  <FaJs />,
+  <SiJquery />,
+  <FaReact />,
+  <SiNextdotjs />,
+];
+
+const backEndIcons = [<FaNodeJs />, <SiExpress />, <SiMongoose />, <SiPhp />];
+
+const databaseIcons = [<SiMongodb />, <SiMysql />];
+
 export const aboutData = [
   {
     title: "skills",
     info: [
       {
         title: "Front End",
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaBootstrap />,
-          <FaSass />,
-          <SiTailwindcss />,
-          <FaJs />,
-          <SiJquery />,
-          <FaReact />,
-          <SiNextdotjs />,
-        ],
+        icons: frontEndIcons,
       },
       {
         title: "Back End",
-        icons: [<FaNodeJs />, <SiExpress />, <SiMongoose />, <SiPhp />],
+        icons: backEndIcons,
       },
       {
         title: "Database",
-        icons: [<SiMongodb />, <SiMysql />],
+        icons: databaseIcons,
       },
     ],
   },
@@ -63,7 +70,7 @@ export const aboutData = [
     title: "experience",
     info: [
       {
-        title: "Junior Account Administrator - Leekie Enterprise Inc.",
+        title: "Junior Account Administrator - Leekie Enterprise",
         stage: "2016 - Present",
       },
     ],
@@ -195,9 +202,9 @@ export default function About() {
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
-                    {item.icons?.map((icon, iconIndex) => {
+                    {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div key={iconIndex} className="text-2xl">
+                        <div key={itemIndex} className="text-2xl text-white">
                           {icon}
                         </div>
                       );

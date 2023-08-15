@@ -31,38 +31,31 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
 //  about data
-
-const frontEndIcons = [
-  <FaHtml5 />,
-  <FaCss3 />,
-  <FaBootstrap />,
-  <FaSass />,
-  <SiTailwindcss />,
-  <FaJs />,
-  <SiJquery />,
-  <FaReact />,
-  <SiNextdotjs />,
-];
-
-const backEndIcons = [<FaNodeJs />, <SiExpress />, <SiMongoose />, <SiPhp />];
-
-const databaseIcons = [<SiMongodb />, <SiMysql />];
-
 export const aboutData = [
   {
     title: "skills",
     info: [
       {
         title: "Front End",
-        icons: frontEndIcons,
+        icons: [
+          <FaHtml5 />,
+          <FaCss3 />,
+          <FaBootstrap />,
+          <FaSass />,
+          <SiTailwindcss />,
+          <FaJs />,
+          <SiJquery />,
+          <FaReact />,
+          <SiNextdotjs />,
+        ],
       },
       {
         title: "Back End",
-        icons: backEndIcons,
+        icons: [<FaNodeJs />, <SiExpress />, <SiMongoose />, <SiPhp />],
       },
       {
         title: "Database",
-        icons: databaseIcons,
+        icons: [<SiMongodb />, <SiMysql />],
       },
     ],
   },
@@ -176,15 +169,15 @@ export default function About() {
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item, itemIndex) => {
+            {aboutData.map((item, dataIndex) => {
               return (
                 <div
-                  key={itemIndex}
+                  key={dataIndex}
                   className={`${
-                    index === itemIndex &&
+                    index === dataIndex &&
                     "text-accent after:w-[100%] after:bg-red-600 after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}
+                  onClick={() => setIndex(dataIndex)}
                 >
                   {item.title}
                 </div>
@@ -202,9 +195,9 @@ export default function About() {
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
-                    {item.icons?.map((icon, itemIndex) => {
+                    {item.icons?.map((icon, iconIndex) => {
                       return (
-                        <div key={itemIndex} className="text-2xl text-white">
+                        <div key={iconIndex} className="text-2xl text-white">
                           {icon}
                         </div>
                       );

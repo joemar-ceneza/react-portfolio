@@ -38,24 +38,77 @@ export const aboutData = [
       {
         title: "Front End",
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaBootstrap />,
-          <FaSass />,
-          <SiTailwindcss />,
-          <FaJs />,
-          <SiJquery />,
-          <FaReact />,
-          <SiNextdotjs />,
+          {
+            name: "HTML",
+            icon: <FaHtml5 />,
+          },
+          {
+            name: "CSS",
+            icon: <FaCss3 />,
+          },
+          {
+            name: "Bootstrap",
+            icon: <FaBootstrap />,
+          },
+          {
+            name: "Sass",
+            icon: <FaSass />,
+          },
+          {
+            name: "Tailwindcss",
+            icon: <SiTailwindcss />,
+          },
+          {
+            name: "JavaScript",
+            icon: <FaJs />,
+          },
+          {
+            name: "JQuery",
+            icon: <SiJquery />,
+          },
+          {
+            name: "React",
+            icon: <FaReact />,
+          },
+          {
+            name: "Nextjs",
+            icon: <SiNextdotjs />,
+          },
         ],
       },
       {
         title: "Back End",
-        icons: [<FaNodeJs />, <SiExpress />, <SiMongoose />, <SiPhp />],
+        icons: [
+          {
+            name: "Nodejs",
+            icon: <FaNodeJs />,
+          },
+          {
+            name: "Expressjs",
+            icon: <SiExpress />,
+          },
+          {
+            name: "Mongoose",
+            icon: <SiMongoose />,
+          },
+          {
+            name: "Php",
+            icon: <SiPhp />,
+          },
+        ],
       },
       {
         title: "Database",
-        icons: [<SiMongodb />, <SiMysql />],
+        icons: [
+          {
+            name: "MongoDB",
+            icon: <SiMongodb />,
+          },
+          {
+            name: "MySQL",
+            icon: <SiMysql />,
+          },
+        ],
       },
     ],
   },
@@ -169,15 +222,15 @@ export default function About() {
           className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
         >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
-            {aboutData.map((item, dataIndex) => {
+            {aboutData.map((item, itemIndex) => {
               return (
                 <div
-                  key={dataIndex}
+                  key={itemIndex}
                   className={`${
-                    index === dataIndex &&
+                    index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-red-600 after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(dataIndex)}
+                  onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
                 </div>
@@ -195,10 +248,10 @@ export default function About() {
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>
                   <div className="flex gap-x-4">
-                    {item.icons?.map((icon, iconIndex) => {
+                    {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div key={iconIndex} className="text-2xl text-white">
-                          {icon}
+                        <div key={itemIndex} className="text-2xl text-white">
+                          {icon.icon}
                         </div>
                       );
                     })}

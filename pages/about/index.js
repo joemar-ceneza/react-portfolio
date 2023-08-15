@@ -173,8 +173,7 @@ export default function About() {
             exit="hidden"
             className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
           >
-            <div className="flex flex-1 xl:gap-x-6">
-              {/* experience */}
+            {/* <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={10} duration={5} />+
@@ -183,7 +182,7 @@ export default function About() {
                   Years of experience
                 </div>
               </div>
-              {/* satisfied clients */}
+
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={50} duration={5} />+
@@ -192,7 +191,7 @@ export default function About() {
                   satisfied clients
                 </div>
               </div>
-              {/* project */}
+
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={650} duration={5} />+
@@ -201,7 +200,7 @@ export default function About() {
                   finished project
                 </div>
               </div>
-              {/* awards */}
+
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
                   <CountUp start={0} end={8} duration={5} />+
@@ -210,7 +209,7 @@ export default function About() {
                   winning awards
                 </div>
               </div>
-            </div>
+            </div> */}
           </motion.div>
         </div>
         {/* info */}

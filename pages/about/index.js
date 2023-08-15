@@ -72,7 +72,6 @@ export const aboutData = [
 
 // counter
 import CountUp from "react-countup";
-import { icons } from "react-icons";
 
 export default function About() {
   const [index, setIndex] = useState(0);
@@ -186,23 +185,27 @@ export default function About() {
             })}
           </div>
           <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
-            {aboutData[index].info.map((item, itemIndex) => (
-              <div
-                key={itemIndex}
-                className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-              >
-                <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                <div className="hidden md:flex">-</div>
-                <div>{item.stage}</div>
-                <div className="flex gap-x-4">
-                  {item.icons?.map((icon, iconIndex) => (
-                    <div key={iconIndex} className="text-2xl">
-                      {icon}
-                    </div>
-                  ))}
+            {aboutData[index].info.map((item, itemIndex) => {
+              return (
+                <div
+                  key={itemIndex}
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                >
+                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
+                  <div className="hidden md:flex">-</div>
+                  <div>{item.stage}</div>
+                  <div className="flex gap-x-4">
+                    {item.icons?.map((icon, iconIndex) => {
+                      return (
+                        <div key={iconIndex} className="text-2xl">
+                          {icon}
+                        </div>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </motion.div>
       </div>

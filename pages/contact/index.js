@@ -10,7 +10,40 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../../variants";
 
+import { useState } from "react";
+import { sendContactForm } from "../../lib/api";
+
+const initValues = { name: "", email: "", subject: "", message: "" };
+
+const initState = { values: initValues };
+
 export default function Contact() {
+  const [state, setState] = useState(initState);
+  const { values } = state;
+
+  const handleChange = ({ target }) => {
+    setState((prev) => ({
+      ...prev,
+      values: {
+        ...prev.values,
+        [target.name]: target.value,
+      },
+    }));
+  };
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    setState((prev) => ({
+      ...prev,
+    }));
+    try {
+      await sendContactForm(values);
+      setState(initState);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="h-full bg-primary/30">
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -36,12 +69,42 @@ export default function Contact() {
           >
             {/* input group */}
             <div className="flex gap-x-6 w-full">
-              <input type="text" placeholder="name" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input
+                type="text"
+                placeholder="name"
+                className="input"
+                name="name"
+                value={values.name}
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                placeholder="email"
+                className="input lowercase"
+                name="email"
+                value={values.email}
+                onChange={handleChange}
+              />
             </div>
-            <input type="text" placeholder="subject" className="input" />
-            <textarea placeholder="message" className="textarea"></textarea>
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+            <input
+              type="text"
+              placeholder="subject"
+              className="input"
+              name="subject"
+              value={values.subject}
+              onChange={handleChange}
+            />
+            <textarea
+              placeholder="message"
+              className="textarea"
+              name="message"
+              value={values.message}
+              onChange={handleChange}
+            ></textarea>
+            <button
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
+              onClick={onSubmit}
+            >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let&apos;s talk
               </span>

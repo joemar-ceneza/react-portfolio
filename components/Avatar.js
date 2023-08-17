@@ -7,7 +7,7 @@ export default function Avatar() {
       <Image
         src={"/profile-picture.png"}
         width={737}
-        height={678}
+        height={750}
         alt=""
         className="translate-z-0 w-full h-full"
       />

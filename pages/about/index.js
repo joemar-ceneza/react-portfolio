@@ -39,39 +39,39 @@ export const aboutData = [
         title: "Front End",
         icons: [
           {
-            name: "HTML",
+            tooltip: "HTML",
             icon: <FaHtml5 />,
           },
           {
-            name: "CSS",
+            tooltip: "CSS",
             icon: <FaCss3 />,
           },
           {
-            name: "Bootstrap",
+            tooltip: "Bootstrap",
             icon: <FaBootstrap />,
           },
           {
-            name: "Sass",
+            tooltip: "Sass",
             icon: <FaSass />,
           },
           {
-            name: "Tailwindcss",
+            tooltip: "Tailwindcss",
             icon: <SiTailwindcss />,
           },
           {
-            name: "JavaScript",
+            tooltip: "JavaScript",
             icon: <FaJs />,
           },
           {
-            name: "JQuery",
+            tooltip: "JQuery",
             icon: <SiJquery />,
           },
           {
-            name: "React",
+            tooltip: "React",
             icon: <FaReact />,
           },
           {
-            name: "Nextjs",
+            tooltip: "Nextjs",
             icon: <SiNextdotjs />,
           },
         ],
@@ -80,19 +80,19 @@ export const aboutData = [
         title: "Back End",
         icons: [
           {
-            name: "Nodejs",
+            tooltip: "Nodejs",
             icon: <FaNodeJs />,
           },
           {
-            name: "Expressjs",
+            tooltip: "Expressjs",
             icon: <SiExpress />,
           },
           {
-            name: "Mongoose",
+            tooltip: "Mongoose",
             icon: <SiMongoose />,
           },
           {
-            name: "Php",
+            tooltip: "Php",
             icon: <SiPhp />,
           },
         ],
@@ -101,11 +101,11 @@ export const aboutData = [
         title: "Database",
         icons: [
           {
-            name: "MongoDB",
+            tooltip: "MongoDB",
             icon: <SiMongodb />,
           },
           {
-            name: "MySQL",
+            tooltip: "MySQL",
             icon: <SiMysql />,
           },
         ],
@@ -236,7 +236,7 @@ export default function About() {
               );
             })}
           </div>
-          <div className="py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start">
+          <div className="py-2 xl:py-10 flex flex-col gap-y-2 xl:gap-y-8 items-center xl:items-start">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
@@ -250,7 +250,12 @@ export default function About() {
                     {item.icons?.map((icon, itemIndex) => {
                       return (
                         <div key={itemIndex} className="text-2xl text-white">
-                          {icon.icon}
+                          <div className="has-tooltip">
+                            <span className="tooltip rounded shadow-lg p-1 bg-neutral-900 text-red-500 -mt-8 text-xs">
+                              {icon.tooltip}
+                            </span>
+                            {icon.icon}
+                          </div>
                         </div>
                       );
                     })}

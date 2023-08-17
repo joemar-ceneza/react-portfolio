@@ -27,7 +27,7 @@ export default function home() {
             className="h1"
           >
             Hi, I am Joemar <br />
-            <span className="text-accent"> Web Developer</span>
+            <span className="text-accent">A Web Developer</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -69,7 +69,7 @@ export default function home() {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[678px] absolute -bottom-32 lg:bottom-0 lg:right-[8%]"
+          className="w-full h-full max-w-[737px] max-h-[750px] absolute -bottom-32 lg:bottom-0 lg:right-[15%]"
         >
           <Avatar />
         </motion.div>

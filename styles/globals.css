@@ -48,4 +48,11 @@
   .textarea {
     @apply w-full h-[180px] p-6 capitalize rounded-lg resize-none;
   }
+  .tooltip {
+    @apply invisible absolute;
+  }
+
+  .has-tooltip:hover .tooltip {
+    @apply visible z-50;
+  }
 }

@@ -22,7 +22,7 @@ export default function Work() {
               exit="hidden"
               className="h2 xl:mt-12"
             >
-              My project&apos;s <span className="text-accent">.</span>
+              My projects <span className="text-accent">.</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -31,9 +31,8 @@ export default function Work() {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit, amet consectetur adipiscing elit. A eveniet
-              dignissimos distinctio tempore harum laudantium. Beatae
-              perspiciatis mollitia animi quaerat?
+              After a few years, I&apos;ve been developing a new project to
+              improve my abilities.
             </motion.p>
             {/* slider */}
           </div>

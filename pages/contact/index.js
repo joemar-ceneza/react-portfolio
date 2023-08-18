@@ -71,16 +71,18 @@ export default function Contact() {
             <div className="flex gap-x-6 w-full">
               <input
                 type="text"
-                placeholder="name"
+                placeholder="Name"
                 className="input"
+                autoComplete="off"
                 name="name"
                 value={values.name}
                 onChange={handleChange}
               />
               <input
                 type="text"
-                placeholder="email"
-                className="input lowercase"
+                placeholder="Email"
+                className="input"
+                autoComplete="off"
                 name="email"
                 value={values.email}
                 onChange={handleChange}
@@ -88,16 +90,18 @@ export default function Contact() {
             </div>
             <input
               type="text"
-              placeholder="subject"
+              placeholder="Subject"
               className="input"
+              autoComplete="off"
               name="subject"
               value={values.subject}
               onChange={handleChange}
             />
             <textarea
-              placeholder="message"
+              placeholder="Message"
               className="textarea"
               name="message"
+              autoComplete="off"
               value={values.message}
               onChange={handleChange}
             ></textarea>

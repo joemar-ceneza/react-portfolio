@@ -22,22 +22,22 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "e-commerce-camera-haus",
           path: "/e-commerce-camera-haus.jpg",
           link: "https://joemar-ceneza-e-commerce-camera-haus.netlify.app/",
         },
         {
-          title: "title",
+          title: "e-commerce-e-shopping",
           path: "/e-commerce-e-shopping.jpg",
           link: "https://joemar-ceneza-e-commerce-shopping.netlify.app/",
         },
         {
-          title: "title",
+          title: "simon-game",
           path: "/simon-game.jpg",
           link: "https://joemar-ceneza.github.io/simon-game/",
         },
         {
-          title: "title",
+          title: "huddle-landing-page",
           path: "/huddle-landing-page.jpg",
           link: "https://joemar-ceneza.github.io/huddle-landing-page/",
         },
@@ -46,24 +46,43 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "notes-app",
           path: "/notes-app.jpg",
           link: "https://joemar-ceneza.github.io/notes-app/",
         },
         {
-          title: "title",
+          title: "birthday-buddy-app",
           path: "/birthday-buddy-app.jpg",
           link: "https://joemar-ceneza.github.io/birthday-buddy-app/",
         },
         {
-          title: "title",
+          title: "expanding-cards",
           path: "/expanding-cards.jpg",
           link: "https://joemar-ceneza.github.io/expanding-cards/",
         },
         {
-          title: "title",
+          title: "testimonials-slider",
           path: "/testimonials-slider.jpg",
           link: "https://joemar-ceneza.github.io/testimonials-slider/",
+        },
+      ],
+    },
+    {
+      images: [
+        {
+          title: "faq-accordion",
+          path: "/faq-accordion.png",
+          link: "https://joemar-ceneza.github.io/faq-accordion/",
+        },
+        {
+          title: "progress-steps",
+          path: "/progress-steps.jpg",
+          link: "https://joemar-ceneza.github.io/progress-steps/",
+        },
+        {
+          title: "counter",
+          path: "/counter.jpg",
+          link: "https://joemar-ceneza.github.io/counter/",
         },
       ],
     },

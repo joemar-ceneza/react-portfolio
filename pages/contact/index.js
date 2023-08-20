@@ -1,8 +1,9 @@
 // components
 import Circles from "../../components/Circles";
+import Modal from "../../components/Modal";
 
 // icons
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsCheckCircle } from "react-icons/bs";
 
 // framer
 import { motion } from "framer-motion";
@@ -13,9 +14,7 @@ import { fadeIn } from "../../variants";
 import { useState } from "react";
 import { sendContactForm } from "../../lib/api";
 
-const initValues = { name: "", email: "", subject: "", message: "" };
-
-const initState = { values: initValues };
+const initState = { values: { name: "", email: "", subject: "", message: "" } };
 
 export default function Contact() {
   const [state, setState] = useState(initState);
@@ -42,10 +41,35 @@ export default function Contact() {
     } catch (error) {
       console.log(error);
     }
+    openModal();
+  };
+
+  // will delete this if not working
+  const [isOpen, setIsOpen] = useState(false);
+  const openModal = () => {
+    setIsOpen(true);
+  };
+  const closeModal = () => {
+    setIsOpen(false);
   };
 
   return (
     <div className="h-full bg-primary/30">
+      <Modal isOpen={isOpen}>
+        <div className=" rounded-[5px] bg-yellow-600 py-6">
+          <BsCheckCircle className="flex mx-auto text-9xl" />
+        </div>
+
+        <h1 className="flex justify-center text-3xl my-6">Thank you!</h1>
+        <p className="mx-auto text-sm text-center w-[200px]">
+          Your details has been successfully submitted!
+        </p>
+        <button
+          onClick={closeModal}
+          className="flex justify-center mx-auto bg-yellow-600 p-2 max-w-[50%] w-full rounded my-6">
+          OK
+        </button>
+      </Modal>
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
@@ -55,8 +79,7 @@ export default function Contact() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12"
-          >
+            className="h2 text-center mb-12">
             Let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
           {/* form */}
@@ -66,7 +89,7 @@ export default function Contact() {
             animate="show"
             exit="hidden"
             className="flex-1 flex flex-col gap-6 w-full mx-auto"
-          >
+            onSubmit={onSubmit}>
             {/* input group */}
             <div className="flex gap-x-6 w-full">
               <input
@@ -75,15 +98,17 @@ export default function Contact() {
                 className="input"
                 autoComplete="off"
                 name="name"
+                required
                 value={values.name}
                 onChange={handleChange}
               />
               <input
-                type="text"
+                type="email"
                 placeholder="Email"
                 className="input"
                 autoComplete="off"
                 name="email"
+                required
                 value={values.email}
                 onChange={handleChange}
               />
@@ -94,21 +119,19 @@ export default function Contact() {
               className="input"
               autoComplete="off"
               name="subject"
+              required
               value={values.subject}
               onChange={handleChange}
             />
             <textarea
               placeholder="Message"
               className="textarea"
-              name="message"
               autoComplete="off"
+              name="message"
+              required
               value={values.message}
-              onChange={handleChange}
-            ></textarea>
-            <button
-              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group"
-              onClick={onSubmit}
-            >
+              onChange={handleChange}></textarea>
+            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Let&apos;s talk
               </span>

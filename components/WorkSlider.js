@@ -97,8 +97,7 @@ export default function WorkSlider() {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[280px] sm:h-[530px]"
-    >
+      className="h-[280px] sm:h-[530px]">
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>
@@ -107,8 +106,7 @@ export default function WorkSlider() {
                 return (
                   <div
                     key={index}
-                    className="relative rounded-lg overflow-hidden flex items-center justify-center group"
-                  >
+                    className="relative rounded-lg overflow-hidden flex items-center justify-center group">
                     <Link href={`${image.link}`} target="_blank">
                       <div className="flex items-center justify-center relative overflow-hidden">
                         {/* image */}

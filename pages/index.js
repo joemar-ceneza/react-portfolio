@@ -24,10 +24,9 @@ export default function home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1"
-          >
-            Hi, I am Joemar <br />
-            <span className="text-accent">A Web Developer</span>
+            className="h1">
+            Hi! I am Joemar, <br />
+            <span className="text-accent">A Web Developer.</span>
           </motion.h1>
           {/* subtitle */}
           <motion.p
@@ -35,11 +34,9 @@ export default function home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
-          >
-            I am a passionate, motivated and self-taught person; seeking career
-            opportunities in{" "}
-            <span className="text-accent">Web Development.</span>
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+            I thrive on coding and creativity, aiming to build a solid path in
+            the world of <span className="text-accent">Web Development.</span>
           </motion.p>
           {/* btn */}
           <div className="flex justify-center xl:hidden relative">
@@ -50,8 +47,7 @@ export default function home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden xl:flex"
-          >
+            className="hidden xl:flex">
             <ProjectsBtn />
           </motion.div>
         </div>
@@ -69,8 +65,7 @@ export default function home() {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[737px] max-h-[750px] absolute -bottom-32 lg:bottom-0 lg:right-[15%]"
-        >
+          className="w-full h-full max-w-[737px] max-h-[750px] absolute -bottom-32 lg:bottom-0 lg:right-[15%]">
           <Avatar />
         </motion.div>
       </div>

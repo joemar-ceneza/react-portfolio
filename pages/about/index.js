@@ -149,30 +149,54 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2"
-          >
-            Captivating <span className="text-accent">stories</span> birth
-            magnificent designs.
+            className="h2">
+            Code, <span className="text-accent">Create, </span>Innovate.
           </motion.h2>
           <motion.p
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
-          >
-            10 years ago, I began freelancing as a developer. Since then,
-            I&apos;ve done remote work for agencies, counsulted for startups,
-            and collaborated on digital products for business and consumer use.
+            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0">
+            {/* mb-6 xl:mb-12 */}
+            I&apos;m a self-taught individual with a deep passion for Web
+            Development.
           </motion.p>
-          {/* counters */}
-          <motion.div
+          <motion.p
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0">
+            My skills cover both Front End and Back End work, including
+            Database.
+          </motion.p>
+          <motion.p
             variants={fadeIn("right", 0.6)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8"
-          >
+            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0">
+            I graduated with a Degree in BS Information Technology, which laid
+            the groundwork for my tech know-how. But my real expertise comes
+            from years of dedicated self-learning.
+          </motion.p>
+          <motion.p
+            variants={fadeIn("right", 0.7)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0">
+            Got questions or want to explore opportunities? Feel free to drop me
+            a message throuh the contact form. Looking forward to connecting!
+          </motion.p>
+          {/* counters */}
+          <motion.div
+            variants={fadeIn("right", 0.8)}
+            initial="hidden"
+            animate="show"
+            exit="hidden"
+            className="hidden md:flex md:max-w-xl xl:max-w-none mx-auto xl:mx-0 mb-8">
             {/* <div className="flex flex-1 xl:gap-x-6">
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
@@ -218,8 +242,7 @@ export default function About() {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex flex-col w-full xl:max-w-[48%] h-[480px]"
-        >
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px]">
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4">
             {aboutData.map((item, itemIndex) => {
               return (
@@ -229,8 +252,7 @@ export default function About() {
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-red-600 after:transition-all after:duration-300"
                   } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
-                  onClick={() => setIndex(itemIndex)}
-                >
+                  onClick={() => setIndex(itemIndex)}>
                   {item.title}
                 </div>
               );
@@ -241,8 +263,7 @@ export default function About() {
               return (
                 <div
                   key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-                >
+                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
                   <div className="font-light mb-2 md:mb-0">{item.title}</div>
                   <div className="hidden md:flex">-</div>
                   <div>{item.stage}</div>

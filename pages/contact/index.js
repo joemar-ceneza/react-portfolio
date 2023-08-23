@@ -79,7 +79,7 @@ export default function Contact() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2 text-center mb-12">
+            className="text-[25px] xl:h2 text-center mb-10 xl:mb-12">
             Let&apos;s <span className="text-accent">connect.</span>
           </motion.h2>
           {/* form */}
@@ -95,7 +95,7 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Name"
-                className="input"
+                className="input xxxs:h-[52px] text-[12px] xxxs:text-base"
                 autoComplete="off"
                 name="name"
                 required
@@ -105,7 +105,7 @@ export default function Contact() {
               <input
                 type="email"
                 placeholder="Email"
-                className="input"
+                className="input xxxs:h-[52px] text-[12px] xxxs:text-base"
                 autoComplete="off"
                 name="email"
                 required
@@ -116,7 +116,7 @@ export default function Contact() {
             <input
               type="text"
               placeholder="Subject"
-              className="input"
+              className="input xxxs:h-[52px] text-[12px] xxxs:text-base"
               autoComplete="off"
               name="subject"
               required
@@ -125,13 +125,13 @@ export default function Contact() {
             />
             <textarea
               placeholder="Message"
-              className="textarea"
+              className="textarea text-[12px] xxxs:text-base"
               autoComplete="off"
               name="message"
               required
               value={values.message}
               onChange={handleChange}></textarea>
-            <button className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group">
+            <button className="btn xxxs:h-[52px] rounded-full border border-white/50 max-w-[130px] xxxs:max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group text-[12px] xxxs:text-base">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 Submit
               </span>

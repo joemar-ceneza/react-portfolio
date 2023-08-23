@@ -12,8 +12,7 @@ export default function ProjectsBtn() {
     <div className="mx-auto xl:mx-0">
       <Link
         href={"/work"}
-        className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-no-repeat group"
-      >
+        className="relative w-[184px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-no-repeat group">
         <Image
           src={"/rounded-text.png"}
           width={141}

@@ -12,7 +12,7 @@ import {
 
 export default function Socials() {
   return (
-    <div className="flex items-center gap-x-5 text-2xl pr-8">
+    <div className="flex items-center gap-x-2 xxs:gap-x-5 text-lg xxs:text-2xl pr-6">
       <Link
         href={"https://github.com/joemar-ceneza"}
         target="_blank"

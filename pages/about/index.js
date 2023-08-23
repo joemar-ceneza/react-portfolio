@@ -129,7 +129,7 @@ import CountUp from "react-countup";
 export default function About() {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-20 xxxs:py-32 text-center xl:text-left">
       <Circles />
       {/* avatar img */}
       {/* <motion.div
@@ -149,7 +149,7 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h2">
+            className="text-[25px] xl:h2">
             Code, <span className="text-accent">Create, </span>Innovate.
           </motion.h2>
           <motion.p
@@ -157,7 +157,7 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0">
+            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0 text-[12px] xxxs:text-base">
             {/* mb-6 xl:mb-12 */}
             I&apos;m a self-taught individual with a deep passion for Web
             Development.
@@ -167,28 +167,18 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0">
+            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0 text-[12px] xxxs:text-base">
             My skills cover both Front End and Back End work, including
             Database.
-          </motion.p>
-          <motion.p
-            variants={fadeIn("right", 0.6)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0">
-            I graduated with a Degree in BS Information Technology, which laid
-            the groundwork for my tech know-how. But my real expertise comes
-            from years of dedicated self-learning.
           </motion.p>
           <motion.p
             variants={fadeIn("right", 0.7)}
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0">
-            Got questions or want to explore opportunities? Feel free to drop me
-            a message throuh the contact form. Looking forward to connecting!
+            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0 text-[12px] xxxs:text-base">
+            Got questions? Feel free to drop me a message through the contact
+            form. Looking forward to connecting!
           </motion.p>
           {/* counters */}
           <motion.div
@@ -251,7 +241,7 @@ export default function About() {
                   className={`${
                     index === itemIndex &&
                     "text-accent after:w-[100%] after:bg-red-600 after:transition-all after:duration-300"
-                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0`}
+                  } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 text-[12px] xxxs:text-base`}
                   onClick={() => setIndex(itemIndex)}>
                   {item.title}
                 </div>
@@ -264,18 +254,24 @@ export default function About() {
                 <div
                   key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60">
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className="font-light mb-2 md:mb-0 text-[12px] xxxs:text-base">
+                    {item.title}
+                  </div>
+                  <div className="hidden md:flex text-[12px] xxxs:text-base">
+                    -
+                  </div>
+                  <div className="text-[12px] xxxs:text-base">{item.stage}</div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div key={itemIndex} className="text-2xl text-white">
+                        <div
+                          key={itemIndex}
+                          className="text-sm xxxs:text-2xl text-white">
                           <div className="has-tooltip">
                             <span className="tooltip rounded shadow-lg p-1 bg-neutral-900 text-red-500 -mt-8 text-xs">
                               {icon.tooltip}
                             </span>
-                            {icon.icon}
+                            <div>{icon.icon}</div>
                           </div>
                         </div>
                       );

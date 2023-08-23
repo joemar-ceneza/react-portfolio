@@ -20,7 +20,7 @@ export default function Work() {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="h2 xl:mt-12">
+              className="text-[25px] xl:h2 xl:mt-12">
               My projects
               {/* <span className="text-accent">.</span> */}
             </motion.h2>
@@ -29,7 +29,7 @@ export default function Work() {
               initial="hidden"
               animate="show"
               exit="hidden"
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0">
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0 text-[12px] xxxs:text-base">
               Check out some of the projects I&apos;ve been working on!
               They&apos;re a great way to see my skills in action.
             </motion.p>

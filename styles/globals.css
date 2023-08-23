@@ -36,10 +36,10 @@
   }
   .btn,
   .input {
-    @apply h-[52px];
+    @apply h-[42px];
   }
   .input {
-    @apply w-full h-[52px] rounded-lg pl-6;
+    @apply w-full h-[42px] rounded-lg pl-6;
   }
   .input,
   .textarea {

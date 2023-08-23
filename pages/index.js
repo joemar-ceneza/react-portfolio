@@ -24,7 +24,7 @@ export default function home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="h1">
+            className="text-[25px] xl:h1">
             Hi! I am Joemar, <br />
             <span className="text-accent">A Web Developer.</span>
           </motion.h1>
@@ -34,7 +34,7 @@ export default function home() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-[12px] xxxs:text-base">
             I thrive on coding and creativity, aiming to build a solid path in
             the world of <span className="text-accent">Web Development.</span>
           </motion.p>

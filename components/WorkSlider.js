@@ -97,7 +97,7 @@ export default function WorkSlider() {
         clickable: true,
       }}
       modules={[Pagination]}
-      className="h-[200px] xxxs:h-[280px] sm:h-[530px]">
+      className="h-[200px] xxs:h-[280px] sm:h-[530px]">
       {workSlides.slides.map((slide, index) => {
         return (
           <SwiperSlide key={index}>

@@ -129,7 +129,7 @@ import CountUp from "react-countup";
 export default function About() {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 py-20 xxxs:py-32 text-center xl:text-left">
+    <div className="h-full bg-primary/30 py-20 xxs:py-32 text-center xl:text-left">
       <Circles />
       {/* avatar img */}
       {/* <motion.div
@@ -157,7 +157,7 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0 text-[12px] xxxs:text-base">
+            className="max-w-[500px] mx-auto mb-1 xxs:mx-2  px-0 xxs:px-2 text-[12px] xxxs:text-base">
             {/* mb-6 xl:mb-12 */}
             I&apos;m a self-taught individual with a deep passion for Web
             Development.
@@ -167,7 +167,7 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0 text-[12px] xxxs:text-base">
+            className="max-w-[500px] mx-auto mb-1 xxs:mx-2  px-0 xxs:px-2 text-[12px] xxxs:text-base">
             My skills cover both Front End and Back End work, including
             Database.
           </motion.p>
@@ -176,7 +176,7 @@ export default function About() {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-[500px] mx-auto xl:mx-0 mb-3 px-2 xl:px-0 text-[12px] xxxs:text-base">
+            className="max-w-[500px] mx-auto mb-1 xxs:mx-2  px-0 xxs:px-2 text-[12px] xxxs:text-base">
             Got questions? Feel free to drop me a message through the contact
             form. Looking forward to connecting!
           </motion.p>

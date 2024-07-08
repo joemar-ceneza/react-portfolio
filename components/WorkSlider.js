@@ -22,6 +22,11 @@ const workSlides = {
     {
       images: [
         {
+          title: "our-home",
+          path: "/our-home.jpg",
+          link: "https://joemar-ceneza-our-home.netlify.app/",
+        },
+        {
           title: "crud",
           path: "/crud.jpg",
           link: "https://joemar-ceneza-crud.netlify.app/",
@@ -36,15 +41,15 @@ const workSlides = {
           path: "/e-commerce-e-shopping.jpg",
           link: "https://joemar-ceneza-e-commerce-shopping.netlify.app/",
         },
+      ],
+    },
+    {
+      images: [
         {
           title: "simon-game",
           path: "/simon-game.jpg",
           link: "https://joemar-ceneza.github.io/simon-game/",
         },
-      ],
-    },
-    {
-      images: [
         {
           title: "huddle-landing-page",
           path: "/huddle-landing-page.jpg",
@@ -60,15 +65,15 @@ const workSlides = {
           path: "/birthday-buddy-app.jpg",
           link: "https://joemar-ceneza.github.io/birthday-buddy-app/",
         },
+      ],
+    },
+    {
+      images: [
         {
           title: "expanding-cards",
           path: "/expanding-cards.jpg",
           link: "https://joemar-ceneza.github.io/expanding-cards/",
         },
-      ],
-    },
-    {
-      images: [
         {
           title: "testimonials-slider",
           path: "/testimonials-slider.jpg",
@@ -83,11 +88,6 @@ const workSlides = {
           title: "progress-steps",
           path: "/progress-steps.jpg",
           link: "https://joemar-ceneza.github.io/progress-steps/",
-        },
-        {
-          title: "counter",
-          path: "/counter.jpg",
-          link: "https://joemar-ceneza.github.io/counter/",
         },
       ],
     },

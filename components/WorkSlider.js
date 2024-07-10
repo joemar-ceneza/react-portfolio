@@ -46,16 +46,6 @@ const workSlides = {
     {
       images: [
         {
-          title: "simon-game",
-          path: "/simon-game.jpg",
-          link: "https://joemar-ceneza.github.io/simon-game/",
-        },
-        {
-          title: "notes-app",
-          path: "/notes-app.jpg",
-          link: "https://joemar-ceneza.github.io/notes-app/",
-        },
-        {
           title: "portfolio-v2",
           path: "/portfolio-v2.jpg",
           link: "https://joemar-ceneza.github.io/portfolio/",
@@ -64,6 +54,16 @@ const workSlides = {
           title: "portfolio-v1",
           path: "/portfolio-v1.jpg",
           link: "https://joemarceneza.netlify.app/",
+        },
+        {
+          title: "simon-game",
+          path: "/simon-game.jpg",
+          link: "https://joemar-ceneza.github.io/simon-game/",
+        },
+        {
+          title: "notes-app",
+          path: "/notes-app.jpg",
+          link: "https://joemar-ceneza.github.io/notes-app/",
         },
       ],
     },

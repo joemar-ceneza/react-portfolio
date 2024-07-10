@@ -51,24 +51,29 @@ const workSlides = {
           link: "https://joemar-ceneza.github.io/simon-game/",
         },
         {
-          title: "huddle-landing-page",
-          path: "/huddle-landing-page.jpg",
-          link: "https://joemar-ceneza.github.io/huddle-landing-page/",
-        },
-        {
           title: "notes-app",
           path: "/notes-app.jpg",
           link: "https://joemar-ceneza.github.io/notes-app/",
         },
         {
-          title: "birthday-buddy-app",
-          path: "/birthday-buddy-app.jpg",
-          link: "https://joemar-ceneza.github.io/birthday-buddy-app/",
+          title: "portfolio-v2",
+          path: "/portfolio-v2.jpg",
+          link: "https://joemar-ceneza.github.io/portfolio/",
+        },
+        {
+          title: "portfolio-v1",
+          path: "/portfolio-v1.jpg",
+          link: "https://joemarceneza.netlify.app/",
         },
       ],
     },
     {
       images: [
+        {
+          title: "huddle-landing-page",
+          path: "/huddle-landing-page.jpg",
+          link: "https://joemar-ceneza.github.io/huddle-landing-page/",
+        },
         {
           title: "expanding-cards",
           path: "/expanding-cards.jpg",
@@ -83,11 +88,6 @@ const workSlides = {
           title: "faq-accordion",
           path: "/faq-accordion.png",
           link: "https://joemar-ceneza.github.io/faq-accordion/",
-        },
-        {
-          title: "progress-steps",
-          path: "/progress-steps.jpg",
-          link: "https://joemar-ceneza.github.io/progress-steps/",
         },
       ],
     },

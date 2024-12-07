@@ -34,7 +34,7 @@ const workSlides = {
         {
           title: "e-commerce-camera-haus",
           path: "/e-commerce-camera-haus.jpg",
-          link: "https://joemar-ceneza-e-commerce-camera-haus.netlify.app/",
+          link: "https://joemar-ceneza-camera-haus.netlify.app/",
         },
         {
           title: "e-commerce-e-shopping",

@@ -20,6 +20,8 @@ import {
   SiMongodb,
   SiMongoose,
   SiPhp,
+  SiPrisma,
+  SiTypescript,
 } from "react-icons/si";
 
 // components
@@ -74,6 +76,10 @@ export const aboutData = [
             tooltip: "Nextjs",
             icon: <SiNextdotjs />,
           },
+          {
+            tooltip: "Typescript",
+            icon: <SiTypescript />,
+          },
         ],
       },
       {
@@ -90,6 +96,10 @@ export const aboutData = [
           {
             tooltip: "Mongoose",
             icon: <SiMongoose />,
+          },
+          {
+            tooltip: "Prisma",
+            icon: <SiPrisma />,
           },
           {
             tooltip: "Php",

@@ -56,7 +56,7 @@ export default function Contact() {
   return (
     <div className="h-full bg-primary/30">
       <Modal isOpen={isOpen}>
-        <div className=" rounded-[5px] bg-yellow-600 py-6">
+        <div className=" rounded-[5px] bg-red-500 py-6">
           <BsCheckCircle className="flex mx-auto text-9xl" />
         </div>
 
@@ -66,7 +66,7 @@ export default function Contact() {
         </p>
         <button
           onClick={closeModal}
-          className="flex justify-center mx-auto bg-yellow-600 p-2 max-w-[50%] w-full rounded my-6">
+          className="flex justify-center mx-auto bg-red-500 p-2 max-w-[50%] w-full rounded my-6">
           OK
         </button>
       </Modal>

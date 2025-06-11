@@ -8,6 +8,7 @@ import {
   RiSkypeLine,
   RiFacebookLine,
   RiInstagramLine,
+  RiDownloadLine,
 } from "react-icons/ri";
 
 export default function Socials() {
@@ -43,6 +44,13 @@ export default function Socials() {
         className="hover:text-accent transition-all duration-300">
         <RiInstagramLine />
       </Link>
+      <a
+        href="/resume.pdf"
+        download
+        className="hover:text-accent transition-all duration-300"
+        title="Download Resume">
+        <RiDownloadLine />
+      </a>
     </div>
   );
 }

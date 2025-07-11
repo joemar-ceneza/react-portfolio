@@ -32,14 +32,14 @@ const workSlides = {
           link: "https://joemar-ceneza-camera-haus.netlify.app/",
         },
         {
-          title: "todo-list",
-          path: "/todo-list.jpg",
-          link: "https://joemar-ceneza-todo-list.netlify.app/",
+          title: "nextauth-app",
+          path: "/nextauth-app.jpg",
+          link: "https://nextauth-app-joemar-ceneza.vercel.app/",
         },
         {
-          title: "crud",
-          path: "/crud.jpg",
-          link: "https://joemar-ceneza-crud.netlify.app/",
+          title: "portfolio-v2",
+          path: "/portfolio-v2.jpg",
+          link: "https://joemar-ceneza.github.io/portfolio/",
         },
       ],
     },
@@ -56,9 +56,9 @@ const workSlides = {
           link: "https://joemar-ceneza.github.io/simon-game/",
         },
         {
-          title: "portfolio-v2",
-          path: "/portfolio-v2.jpg",
-          link: "https://joemar-ceneza.github.io/portfolio/",
+          title: "todo-list",
+          path: "/todo-list.jpg",
+          link: "https://joemar-ceneza-todo-list.netlify.app/",
         },
         {
           title: "portfolio-v1",
@@ -70,13 +70,13 @@ const workSlides = {
     {
       images: [
         {
-          title: "notes-app",
-          path: "/notes-app.jpg",
-          link: "https://joemar-ceneza.github.io/notes-app/",
+          title: "crud",
+          path: "/crud.jpg",
+          link: "https://joemar-ceneza-crud.netlify.app/",
         },
         {
           title: "faq-accordion",
-          path: "/faq-accordion.png",
+          path: "/faq-accordion.jpg",
           link: "https://joemar-ceneza.github.io/faq-accordion/",
         },
         {
@@ -115,12 +115,7 @@ export default function WorkSlider() {
                     <Link href={`${image.link}`} target="_blank">
                       <div className="flex items-center justify-center relative overflow-hidden">
                         {/* image */}
-                        <Image
-                          src={image.path}
-                          width={500}
-                          height={500}
-                          alt=""
-                        />
+                        <Image src={image.path} width={500} height={500} alt="" />
                         {/* overlay gradient */}
                         <div className="absolute inset-0 bg-gradient-to-l from-transparent via-[#e838cc] to-[#4a22bd] opacity-0 group-hover:opacity-80 transition-all duration-300"></div>
                         {/* title */}

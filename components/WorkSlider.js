@@ -32,8 +32,8 @@ const workSlides = {
           link: "https://joemar-ceneza-camera-haus.netlify.app/",
         },
         {
-          title: "nextauth-app",
-          path: "/nextauth-app.jpg",
+          title: "mood-tracking-app",
+          path: "/mood-tracking-app.jpg",
           link: "https://nextauth-app-joemar-ceneza.vercel.app/",
         },
         {
